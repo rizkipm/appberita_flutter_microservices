@@ -16,7 +16,7 @@ class _PageListBeritaState extends State<PageListBerita> {
     try{
 
       http.Response res = await http.get(Uri.parse
-        ('http://10.208.97.6:8085/getBerita.php'));
+        ('http://10.160.35.45:8085/getBerita.php'));
       return modelListBeritaFromJson(res.body).data;
     }catch(e){
       setState(() {
